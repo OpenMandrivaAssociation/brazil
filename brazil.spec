@@ -51,7 +51,7 @@ API documentation for %{name}.
 
 %package demo
 Summary:   Demos for %{name}
-Group:     Development/Libraries
+Group:     Development/Java
 Requires:  %{name} = %{version}-%{release}
 Requires:  tcl
 
