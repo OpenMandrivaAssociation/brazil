@@ -2,7 +2,7 @@
 
 Name:      brazil
 Version:   2.3
-Release:   %mkrel 2.3.2
+Release:   %mkrel 2.3.3
 Summary:   Extremely small footprint Java HTTP stack
 Group:     Development/Java
 License:   SPL
