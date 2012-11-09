@@ -1,0 +1,47 @@
+--- srcs/sunlabs/brazil/sunlabs/RestartHandler.java	2007-12-24 13:44:40.000000000 +0000
++++ srcs/sunlabs/brazil/sunlabs/RestartHandler.java	2007-12-24 13:45:40.000000000 +0000
+@@ -49,8 +49,8 @@
+ import sunlabs.brazil.server.Request;
+ import sunlabs.brazil.server.Server;
+ 
+-import sun.misc.Signal;
+-import sun.misc.SignalHandler;
++//import sun.misc.Signal;
++//import sun.misc.SignalHandler;
+ 
+ /**
+  * Restart the server when a sigHUP is received.
+@@ -81,7 +81,8 @@
+  * </dl>
+  */
+ 
+-public class RestartHandler implements Handler, SignalHandler {
++//public class RestartHandler implements Handler, SignalHandler {
++public class RestartHandler implements Handler {
+     Server server;		// reference to our server
+     String prefix;		// our name in the config file
+     boolean shouldKeep;		// keep existing config
+@@ -99,7 +100,7 @@
+ 	    configFile = new File(file);
+ 	}
+ 	lastModified = 0;	// in case we've been started differently
+-	Signal.handle(new Signal("HUP"), this);
++//	Signal.handle(new Signal("HUP"), this);
+ 	return true;
+     }
+ 
+@@ -111,7 +112,7 @@
+     /**
+      * Restart the server after re-reading the config file
+      */
+-
++/*
+     public void
+     handle(Signal sig) {
+ 	server.log(Server.LOG_DIAGNOSTIC, prefix,
+@@ -148,4 +149,5 @@
+ 	    }
+ 	}
+     }
++    */
+ }
