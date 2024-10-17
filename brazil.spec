@@ -6,7 +6,7 @@ Release:   %mkrel 2.3.3
 Summary:   Extremely small footprint Java HTTP stack
 Group:     Development/Java
 License:   SPL
-URL:       http://research.sun.com/brazil/
+URL:       https://research.sun.com/brazil/
 
 # source tarball and the script used to fetch it from Sun's Download Center
 # script usage:
